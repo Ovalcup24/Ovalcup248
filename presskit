@@ -1,0 +1,217 @@
+
+<html lang='es'>    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Guinxu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Presskit - Guinxu</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+        <link rel="stylesheet" href="utils/style.css">
+    </head>
+    <body>
+        
+        <nav class="menu-container">
+
+    <ul class="menu-row">
+        
+        <li class="menu-cell menu-active"><a href="."><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Info <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="games">Proyectos</a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Influencer <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="gallery">Galería</a></li>
+        
+        <li class="menu-dropdown" style="float:right; width:120px;">
+            <a href="javascript:void(0)" class="menu-dropdown-button"><img src='img/flag_es.png'> Español</a>
+            <div class="menu-dropdown-content-lang">
+                <a href="javascript:void(0)" onclick="SetLang('es');"><img src="img/flag_es.png"> Español</a>
+                <a href="javascript:void(0)" onclick="SetLang('en');"><img src="img/flag_en.png"> English</a>
+            </div>
+        </li>
+        
+    </ul>
+    
+    
+    <ul class="menu-row-mobile">
+        
+        <li class="menu-dropdown-mobile">
+            <a href="javascript:void(0)" class="menu-dropdown-button" onclick="UnfoldMobileMenu(); return false;">&#9776; Menú</a>
+            <div class="menu-dropdown-content-mobile">
+                <a href="." class="pallete-yellow"><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a>
+                
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+                
+                <a href="games">Proyectos</a>
+                
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+                
+                <a href="gallery">Galería</a>
+                
+                <a href='javascript:void(0)' onclick=SetLang('en');>                <img src='img/flag_en.png'> English                </a>            </div>
+        </li>
+    </ul>
+
+</nav>
+
+
+<script>
+
+function UnfoldMobileMenu()
+{
+    if (document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display == 'block')
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'none';
+    }
+    else
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'block';
+    }
+}
+
+function SetLang(newLang)
+{
+    var urlOriginal = window.location.pathname;
+    var sufijo = urlOriginal.replace("en/", "");
+    
+    if (newLang == "es") { window.location.href = "https://guinxu.com" + sufijo; }
+    if (newLang == "en") { window.location.href = "https://guinxu.com/en" + sufijo; }
+}
+    
+</script>
+
+
+        
+        <div class="content">
+            <div class="content-body">
+                <h1>Kit de prensa</h1>
+                
+                <h2>Guinxu</h2>
+                
+                <h3>Logos</h3>
+                
+                <div class="gallery-container">
+                    <div class="gallery-image"><img loading="lazy" src="presskit/logo-guinxu-color.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/logo-guinxu-white.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/logo-guinxu-black.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/logo-guinxu-white-yellow.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/logo-guinxu-black-white.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/guinxu-icono.png"></div>
+                </div>
+                
+                <div class="gallery-popup">
+                    <span>&times;</span>
+                    <img src="presskit/logo-guinxu-color.png" alt="">
+                </div>
+                
+                <h3>Acerca de Guinxu</h3>
+                Guinxu o Guillem Salvadó es un desarrollador de videojuegos indie dueño de un canal de YouTube con 1.000.000 suscriptores dedicado a divulgación sobre creación de videojuegos.                
+                <ul>
+                    <li><b>Mail:</b> <a href="mailto:contacto@guinxu.com">contacto@guinxu.com</a></li>
+                    <li><b>Twitter:</b> <a href="https://twitter.com/guinxu" target=_blank>twitter.com/guinxu</a></li>
+                    <li><b>Instagram:</b> <a href="https://instagram.com/guinxu" target=_blank>instagram.com/guinxu</a></li>
+                    <li><b>YouTube:</b> <a href="https://www.youtube.com/c/Guinxu" target=_blank>youtube.com/c/Guinxu</a></li>
+                    <li><b>Website:</b> <a href="https://guinxu.com" target=_blank>guinxu.com</a></li>
+                    <li><b>Steam:</b> <a href="https://store.steampowered.com/developer/Guinxu" target=_blank>store.steampowered.com/developer/Guinxu</a></li>
+                </ul>
+                
+                
+                <h2>Flatworld</h2>
+                
+                <h3>Logos y arte promocional</h3>
+                
+                <div class="gallery-container">
+                    <div class="gallery-image"><img loading="lazy" src="presskit/logo-flatworld-jap.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/logo-flatworld.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/flatworld-art-1.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/flatworld-art-2.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="presskit/flatworld-art-3.png"></div>
+                </div>
+                
+                <h3>Acerca de Flatworld</h3>
+                <p>Explora un mundo lleno de <b>magia</b>, <b>puzles</b> y <b>enemigos</b> protagonizado por el personaje más débil del juego.</p>
+                
+                <ul>
+                    <li><b>Steam: </b> <a href="https://store.steampowered.com/app/1296540/Flatworld/" target=_blank>https://store.steampowered.com/app/1296540/Flatworld/</a></li>
+                    <li><b>Lanzamiento: </b>28 de Abril de 2022 (Early Access)</li>
+                    <li><b>Género: </b>Acción / Aventura</li>
+                    <li><b>Jugadores: </b>1</li>
+                    <li><b>Idiomas: </b>Español & Inglés</li>
+                </ul>
+                
+                <p align=center><img src="presskit/flatworld-recorre.gif"></p>
+                <p align=center><b>Recorre</b> un mundo hostil lleno de ciudades, mazmorras y montones de secretos.</p>
+                <p align=center><img src="presskit/flatworld-magia.gif"></p>
+                <p align=center><b>Usa magia</b> para derretir hielo, electrocutar, lanzar ráfagas de viento, poner explosivos para romper muros agrietados...</p>
+                <p align=center><img src="presskit/flatworld-pelea.gif"></p>
+                <p align=center><b>Pelea</b> contra temibles monstruos y villanos.</p>
+                <p align=center><img src="presskit/flatworld-puzzles.gif"></p>
+                <p align=center><b>Resuelve puzzles</b> para avanzar por las mazmorras con la ayuda de múltiples personajes y habilidades.</p>
+                
+                <h3>Trailer</h3>
+                
+                <p align=center>
+                    <iframe class="video-embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/uSdv9H-wd6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+                
+                <h3>Imágenes</h3>
+                
+                <div class="gallery-container">
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-1.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-2.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-3.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-4.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-5.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-6.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-7es.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-8.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-9.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-10.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-11.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/flatworld-12.png"></div>
+                </div>
+                
+                
+                <script type="text/javascript" src="utils/galeria.js"></script>
+                
+            </div>
+        </div>
+        
+        <div class="menu-footer">
+    <p align=center>
+        <a href="https://twitter.com/guinxu" target=_blank class="white-expand-hover"><img src="img/twitter.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://instagram.com/guinxu" target=_blank class="white-expand-hover"><img src="img/instagram.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://youtube.com/c/guinxu" target=_blank class="white-expand-hover"><img src="img/youtube.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://twitch.tv/guinxu" target=_blank class="white-expand-hover"><img src="img/twitch.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://tiktok.com/@guinxudev" target=_blank class="white-expand-hover"><img src="img/tiktok.png" style="margin-left: 16px; margin-right: 16px;"></a>
+    </p>
+    
+    <p align=center>
+        <a href="about">About</a> | <a href="contact">Contact</a> | <a href="faq">FAQ</a>
+    </p>
+    
+    <p align=center>2025 Guinxu. All rights reserved.</p>
+</div>        
+    </body>
+</html>
