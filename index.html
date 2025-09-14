@@ -1,0 +1,205 @@
+
+<html lang='es'>    <head>
+        <meta charset="UTF-8">
+        <meta name='description' content='Desarrollo de videojuegos, divulgación en YouTube y campañas con marcas.'>        <meta name="keywords" content="Guinxu, Ginxu, GameDev, Game Dev, Indie, Flatworld, One Cat a Day, Desarrollo de videojuegos, Guillem Salvadó, DevTube, Dev Tuber, YouTube, Influencer">
+        <meta name="author" content="Guinxu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guinxu - Desarrollo de videojuegos en YouTube</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+        <link rel="stylesheet" href="utils/style.css">
+    </head>
+    <body>
+        
+        <nav class="menu-container">
+
+    <ul class="menu-row">
+        
+        <li class="menu-cell menu-active"><a href="."><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Info <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="games">Proyectos</a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Influencer <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="gallery">Galería</a></li>
+        
+        <li class="menu-dropdown" style="float:right; width:120px;">
+            <a href="javascript:void(0)" class="menu-dropdown-button"><img src='img/flag_es.png'> Español</a>
+            <div class="menu-dropdown-content-lang">
+                <a href="javascript:void(0)" onclick="SetLang('es');"><img src="img/flag_es.png"> Español</a>
+                <a href="javascript:void(0)" onclick="SetLang('en');"><img src="img/flag_en.png"> English</a>
+            </div>
+        </li>
+        
+    </ul>
+    
+    
+    <ul class="menu-row-mobile">
+        
+        <li class="menu-dropdown-mobile">
+            <a href="javascript:void(0)" class="menu-dropdown-button" onclick="UnfoldMobileMenu(); return false;">&#9776; Menú</a>
+            <div class="menu-dropdown-content-mobile">
+                <a href="." class="pallete-yellow"><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a>
+                
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+                
+                <a href="games">Proyectos</a>
+                
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+                
+                <a href="gallery">Galería</a>
+                
+                <a href='javascript:void(0)' onclick=SetLang('en');>                <img src='img/flag_en.png'> English                </a>            </div>
+        </li>
+    </ul>
+
+</nav>
+
+
+<script>
+
+function UnfoldMobileMenu()
+{
+    if (document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display == 'block')
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'none';
+    }
+    else
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'block';
+    }
+}
+
+function SetLang(newLang)
+{
+    var urlOriginal = window.location.pathname;
+    var sufijo = urlOriginal.replace("en/", "");
+    
+    if (newLang == "es") { window.location.href = "https://guinxu.com" + sufijo; }
+    if (newLang == "en") { window.location.href = "https://guinxu.com/en" + sufijo; }
+}
+    
+</script>
+
+
+                
+        <div class="banner-portada">
+            
+            <div align=center style="margin:0px; width:100%;" class="banner-contenido">
+                
+                <p align=right style="margin:0px;"><img src="img/gray-yellow-logo.png"></p>
+                
+                <h3 align=right style="margin-top: 10px; margin-bottom: 0px;">Creación de contenido sobre desarrollo de videojuegos.</h3>
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="content">
+            <div class="content-body">
+                
+                <div class="columns-wrapper">
+                    
+                    <div class="columns-element" style="padding: 0px 0px !important; text-align: left !important;">
+                        <img src="fotos/guinxu/guinxu-main.jpg" style="width: 66%; border-radius: 10px;">
+                    </div>
+                    
+                    <div class="columns-element" style="width: 600px; padding: 0px 0px !important;">
+                        <p align=right>
+                            Me llamo Guinxu, soy desarrollador de videojuegos indie y comparto todo el proceso en mi <a href='https://youtube.com/c/guinxu' target=_blank>canal de YouTube</a>.<br><br>¿Quieres aprender cómo funcionan por dentro tus juegos favoritos?<br>¡Has llegado al lugar indicado!                                                                                </p>
+                        
+                        <br><br>
+                        
+                        <div class="redesf2-container">
+                    
+                            <div class="redesf2-element">
+                                <a href="https://youtube.com/@guinxu" target="_blank" class="anti-a">
+                                    <img src="img/youtube-logo.png">
+                                    <p class="followers-count-small3" align="center">+1M</p>
+                                </a>
+                            </div>
+                            
+                            <div class="redesf2-element">
+                                <a href="https://twitter.com/guinxu" target="_blank" class="anti-a">
+                                    <img src="img/x-logo.png">
+                                    <p class="followers-count-small3" align="center">50K</p>
+                                </a>
+                            </div>
+                            
+                            <div class="redesf2-element">
+                                <a href="https://instagram.com/guinxu" target="_blank" class="anti-a">
+                                    <img src="img/instagram-logo.png">
+                                    <p class="followers-count-small3" align="center">70K</p>
+                                </a>
+                            </div>
+                            
+                            <div class="redesf2-element">
+                                <a href="https://www.tiktok.com/@guinxudev" target="_blank" class="anti-a">
+                                    <img src="img/tiktok-logo.png">
+                                    <p class="followers-count-small3" align="center">130K</p>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <br>
+                
+                <h2 align=left>Campañas publicitarias destacadas</h2>
+                <div class='brands-container'><div class='brands-logo'><img src='img/brands/opera.png'></div><div class='brands-logo'><img src='img/brands/hp.png'></div><div class='brands-logo'><img src='img/brands/ikea.png'></div><div class='brands-logo'><img src='img/brands/sega.png'></div><div class='brands-logo'><img src='img/brands/gamemaker.png'></div><div class='brands-logo'><img src='img/brands/hostinger.png'></div><div class='brands-logo'><img src='img/brands/mihoyo.png'></div><div class='brands-logo'><img src='img/brands/logitech.png'></div><div class='brands-logo'><img src='img/brands/atlus.png'></div><div class='brands-logo'><img src='img/brands/ankama.png'></div><div class='brands-logo'><img src='img/brands/supermario.png'></div><div class='brands-logo'><img src='img/brands/bethesda.png'></div><div class='brands-logo'><img src='img/brands/msi.png'></div><div class='brands-logo'><img src='img/brands/intel.png'></div><div class='brands-logo'><img src='img/brands/samsung.png'></div></div>                
+                <h2 align=left>Proyectos</h2>
+                
+                <div class="collection-wrapper">
+                    <div class="collection-element white-expand-hover"><a href="flatworld"><img src="img/games/flatworld-cover-small.png" width=470 class="rounded-corners shadow-effect"></a></div>
+                    <div class="collection-element white-expand-hover"><a href="no-more-shopping"><img src="img/games/no-more-shopping-cover-small.png" width=470 class="rounded-corners shadow-effect"></a></div>
+                    <div class="collection-element white-expand-hover"><a href="one-cat-a-day"><img src="img/games/one-cat-a-day-cover-small.png" width=470 class="rounded-corners shadow-effect"></a></div>
+                </div>
+                
+                <h2 align=left>Últimos vídeos publicados</h2>
+                <div class='youtube-playlist'><div class='youtube-playlist-video'><a href='https://youtu.be/MWpgdLxilVY' target=_blank><img src='https://i.ytimg.com/vi/MWpgdLxilVY/mqdefault.jpg'><br/>Nintendo OCULTÓ esta función a los desarrolladores</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/tmDShZBGFPA' target=_blank><img src='https://i.ytimg.com/vi/tmDShZBGFPA/mqdefault.jpg'><br/>Viajo a Estados Unidos de la mano de HP</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/JO_LId69E5A' target=_blank><img src='https://i.ytimg.com/vi/JO_LId69E5A/mqdefault.jpg'><br/>Las animaciones de League of Legends están ROTAS</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/VozvJps4a_k' target=_blank><img src='https://i.ytimg.com/vi/VozvJps4a_k/mqdefault.jpg'><br/>Añadí el mapa de Pokémon a Mario Kart</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/DPvowfnFf4c' target=_blank><img src='https://i.ytimg.com/vi/DPvowfnFf4c/mqdefault.jpg'><br/>La luz en videojuegos te engaña 👀</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/lV62_2BGh1M' target=_blank><img src='https://i.ytimg.com/vi/lV62_2BGh1M/mqdefault.jpg'><br/>Las hitboxes de Mario 64 están ROTAS</a></div></div>                
+            </div>
+        </div>
+        
+        <div class="menu-footer">
+    <p align=center>
+        <a href="https://twitter.com/guinxu" target=_blank class="white-expand-hover"><img src="img/twitter.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://instagram.com/guinxu" target=_blank class="white-expand-hover"><img src="img/instagram.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://youtube.com/c/guinxu" target=_blank class="white-expand-hover"><img src="img/youtube.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://twitch.tv/guinxu" target=_blank class="white-expand-hover"><img src="img/twitch.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://tiktok.com/@guinxudev" target=_blank class="white-expand-hover"><img src="img/tiktok.png" style="margin-left: 16px; margin-right: 16px;"></a>
+    </p>
+    
+    <p align=center>
+        <a href="about">About</a> | <a href="contact">Contact</a> | <a href="faq">FAQ</a>
+    </p>
+    
+    <p align=center>2025 Guinxu. All rights reserved.</p>
+</div>        
+    </body>
+</html>
