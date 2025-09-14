@@ -1,0 +1,163 @@
+
+<html lang='es'>    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Acciones publicitarias para empresas en YouTube.">
+        <meta name="keywords" content="Guinxu, Ginxu, GameDev, Game Dev, Indie, Flatworld, One Cat a Day, Desarrollo de videojuegos, Guillem Salvadó, DevTube, Dev Tuber, YouTube, Influencer">
+        <meta name="author" content="Guinxu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promo - Guinxu</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+        <link rel="stylesheet" href="utils/style.css">
+    </head>
+    <body>
+        
+        <nav class="menu-container">
+
+    <ul class="menu-row">
+        
+        <li class="menu-cell menu-active"><a href="."><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Info <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="games">Proyectos</a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Influencer <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="gallery">Galería</a></li>
+        
+        <li class="menu-dropdown" style="float:right; width:120px;">
+            <a href="javascript:void(0)" class="menu-dropdown-button"><img src='img/flag_es.png'> Español</a>
+            <div class="menu-dropdown-content-lang">
+                <a href="javascript:void(0)" onclick="SetLang('es');"><img src="img/flag_es.png"> Español</a>
+                <a href="javascript:void(0)" onclick="SetLang('en');"><img src="img/flag_en.png"> English</a>
+            </div>
+        </li>
+        
+    </ul>
+    
+    
+    <ul class="menu-row-mobile">
+        
+        <li class="menu-dropdown-mobile">
+            <a href="javascript:void(0)" class="menu-dropdown-button" onclick="UnfoldMobileMenu(); return false;">&#9776; Menú</a>
+            <div class="menu-dropdown-content-mobile">
+                <a href="." class="pallete-yellow"><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a>
+                
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+                
+                <a href="games">Proyectos</a>
+                
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+                
+                <a href="gallery">Galería</a>
+                
+                <a href='javascript:void(0)' onclick=SetLang('en');>                <img src='img/flag_en.png'> English                </a>            </div>
+        </li>
+    </ul>
+
+</nav>
+
+
+<script>
+
+function UnfoldMobileMenu()
+{
+    if (document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display == 'block')
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'none';
+    }
+    else
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'block';
+    }
+}
+
+function SetLang(newLang)
+{
+    var urlOriginal = window.location.pathname;
+    var sufijo = urlOriginal.replace("en/", "");
+    
+    if (newLang == "es") { window.location.href = "https://guinxu.com" + sufijo; }
+    if (newLang == "en") { window.location.href = "https://guinxu.com/en" + sufijo; }
+}
+    
+</script>
+
+
+        
+        <div class="content">
+            <div class="content-body">
+                <h1>Contenido patrocinado</h1>
+                
+                <p>En mi <a href='https://youtube.com/c/guinxu' target=_blank>canal de YouTube</a> realizo promociones de productos o servicios de <b>empresas</b> del ámbito de la informática, videojuegos y en ciertas ocasiones de otros sectores siempre que encaje. Si tienes alguna propuesta, puedes escribirme a <a href='mailto:contacto@guinxu.com'>contacto@guinxu.com</a>.</p>
+                
+                <h2>Marcas con las que he trabajado</h2>
+                
+                <div class='brands-container'><div class='brands-logo'><img src='img/brands/opera.png'></div><div class='brands-logo'><img src='img/brands/hp.png'></div><div class='brands-logo'><img src='img/brands/ikea.png'></div><div class='brands-logo'><img src='img/brands/sega.png'></div><div class='brands-logo'><img src='img/brands/gamemaker.png'></div><div class='brands-logo'><img src='img/brands/hostinger.png'></div><div class='brands-logo'><img src='img/brands/mihoyo.png'></div><div class='brands-logo'><img src='img/brands/logitech.png'></div><div class='brands-logo'><img src='img/brands/atlus.png'></div><div class='brands-logo'><img src='img/brands/ankama.png'></div><div class='brands-logo'><img src='img/brands/supermario.png'></div><div class='brands-logo'><img src='img/brands/bethesda.png'></div><div class='brands-logo'><img src='img/brands/msi.png'></div><div class='brands-logo'><img src='img/brands/intel.png'></div><div class='brands-logo'><img src='img/brands/samsung.png'></div></div>
+                <h2>Ejemplos de campañas</h2>
+                
+                <p align=center><iframe class="video-embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/wC1HcPKFg6I?start=430" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                
+                <p align=center><iframe class="video-embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/W-vEWPHLwxA?start=88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                
+                <p align=center><iframe class="video-embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/yp7HpTkSzBA?start=197" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+                <h2>Servicio</h2>
+                
+                <p>Normalmente las colaboraciones se suelen llevar a cabo de la siguiente manera (negociable):</p>
+                <ul>
+                    <li><b>Modalidad 1: </b>Mención de 60-90 segundos en un vídeo.</li>
+                    <li><b>Modalidad 2: </b>Vídeo 100% dedicado de 7-10 minutos.</li>
+                </ul>
+                
+                <ul>
+                    <li>Enlaces en la primera línea de la descripción del vídeo.</li>
+                    <li>Envío del vídeo por privado con antelación para verificar que esté todo bien.</li>
+                    <li>Precio fijo a negociar según la modalidad elegida.</li>
+                    <li>Pago mediante transferencia bancaria (factura).</li>
+                    <li>Puedo comunicarme con la empresa en Español, Francés o Inglés sin problema.</li>
+                    <li>No acepto colaboraciones con empresas que se comuniquen a través de Google Translator o similar.</li>
+                    <li>No anuncio casas de apuestas, NFTs, bebidas alcohólicas ni contenido NSFW.</li>
+                </ul>
+                
+                
+            </div>
+        </div>
+        
+        <div class="menu-footer">
+    <p align=center>
+        <a href="https://twitter.com/guinxu" target=_blank class="white-expand-hover"><img src="img/twitter.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://instagram.com/guinxu" target=_blank class="white-expand-hover"><img src="img/instagram.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://youtube.com/c/guinxu" target=_blank class="white-expand-hover"><img src="img/youtube.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://twitch.tv/guinxu" target=_blank class="white-expand-hover"><img src="img/twitch.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://tiktok.com/@guinxudev" target=_blank class="white-expand-hover"><img src="img/tiktok.png" style="margin-left: 16px; margin-right: 16px;"></a>
+    </p>
+    
+    <p align=center>
+        <a href="about">About</a> | <a href="contact">Contact</a> | <a href="faq">FAQ</a>
+    </p>
+    
+    <p align=center>2025 Guinxu. All rights reserved.</p>
+</div>        
+    </body>
+</html>
