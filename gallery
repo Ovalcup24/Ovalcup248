@@ -1,0 +1,168 @@
+
+<html lang='es'>    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Guinxu, Ginxu, GameDev, Game Dev, Indie, Flatworld, One Cat a Day, Desarrollo de videojuegos, Guillem Salvadó, DevTube, Dev Tuber, YouTube, Influencer">
+        <meta name="author" content="Guinxu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galería - Guinxu</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+        <link rel="stylesheet" href="utils/style.css">
+    </head>
+    <body>
+        
+        <nav class="menu-container">
+
+    <ul class="menu-row">
+        
+        <li class="menu-cell menu-active"><a href="."><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Info <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="games">Proyectos</a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Influencer <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="gallery">Galería</a></li>
+        
+        <li class="menu-dropdown" style="float:right; width:120px;">
+            <a href="javascript:void(0)" class="menu-dropdown-button"><img src='img/flag_es.png'> Español</a>
+            <div class="menu-dropdown-content-lang">
+                <a href="javascript:void(0)" onclick="SetLang('es');"><img src="img/flag_es.png"> Español</a>
+                <a href="javascript:void(0)" onclick="SetLang('en');"><img src="img/flag_en.png"> English</a>
+            </div>
+        </li>
+        
+    </ul>
+    
+    
+    <ul class="menu-row-mobile">
+        
+        <li class="menu-dropdown-mobile">
+            <a href="javascript:void(0)" class="menu-dropdown-button" onclick="UnfoldMobileMenu(); return false;">&#9776; Menú</a>
+            <div class="menu-dropdown-content-mobile">
+                <a href="." class="pallete-yellow"><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a>
+                
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+                
+                <a href="games">Proyectos</a>
+                
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+                
+                <a href="gallery">Galería</a>
+                
+                <a href='javascript:void(0)' onclick=SetLang('en');>                <img src='img/flag_en.png'> English                </a>            </div>
+        </li>
+    </ul>
+
+</nav>
+
+
+<script>
+
+function UnfoldMobileMenu()
+{
+    if (document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display == 'block')
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'none';
+    }
+    else
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'block';
+    }
+}
+
+function SetLang(newLang)
+{
+    var urlOriginal = window.location.pathname;
+    var sufijo = urlOriginal.replace("en/", "");
+    
+    if (newLang == "es") { window.location.href = "https://guinxu.com" + sufijo; }
+    if (newLang == "en") { window.location.href = "https://guinxu.com/en" + sufijo; }
+}
+    
+</script>
+
+
+        
+        
+                    
+            
+        
+        
+        <div class="content">
+            <div class="content-body">
+                <h1>Galería</h1>
+                
+                Pongo a disposición las siguientes imágenes para que los medios puedan ilustrar los artículos en los que hablen de mí.                
+                <h2>Índice</h2>
+                
+                <ul>
+                    <li><a href='presskit' target=_blank>Proyectos y logos (presskit)</a></li>
+                    <li><a href='#guinxu'>Fotos de Guinxu</a></li>
+                    <li><a href='#events'>Eventos y reuniones</a></li>
+                    <!--<li><a href='#hobbies'>Mis aficiones</a></li>-->
+                </ul>
+                
+                <h2 id="guinxu">&#9654; Fotos de Guinxu</h2>
+                
+                <div class="gallery-container">
+                    <div class='gallery-image'><img loading='lazy' src='fotos/guinxu/guinxu-setup-youtube.jpg' alt='guinxu setup youtube' style='' title='Guinxu en su setup de YouTube y Twitch.'>Guinxu en su setup de YouTube y Twitch.</div><div class='gallery-image'><img loading='lazy' src='fotos/guinxu/guinxu-intel-ambassador.jpg' alt='Guinxu Intel Ambassador' style='object-position: 0% 15%' title='Guinxu formando parte la familia de Embajadores de Intel.'>Guinxu formando parte la familia de Embajadores de Intel.</div><div class='gallery-image'><img loading='lazy' src='fotos/guinxu/guinxu-entrevista-radio.jpg' alt='guinxu entrevista radio' style='object-position: 0% 25%' title='Guinxu siendo entrevistado en Radio Sant Boi.'>Guinxu siendo entrevistado en Radio Sant Boi.</div><div class='gallery-image'><img loading='lazy' src='fotos/guinxu/guinxu-conferencia-jump2digital.jpg' alt='Guinxu conferencia Jump2Digital Barcelona' style='' title='Guinxu dando una conferencia en Jump2Digital 2023 (Barcelona).'>Guinxu dando una conferencia en Jump2Digital 2023 (Barcelona).</div><div class='gallery-image'><img loading='lazy' src='fotos/guinxu/guinxu-bosque-bambu-japon.jpg' alt='Guinxu bosque bambu Japon Tokyo' style='object-position: 0% 7%' title='Foto de Guinxu en el bosque de bambú de Hokokuji.'>Foto de Guinxu en el bosque de bambú de Hokokuji.</div><div class='gallery-image'><img loading='lazy' src='fotos/guinxu/guinxu-museo-teamlab-tokyo.jpg' alt='Guinxu museo Tokyo Teamlabs' style='' title='Visita de Guinxu al museo TeamLab de Tokyo.'>Visita de Guinxu al museo TeamLab de Tokyo.</div>                </div>
+                
+                <h2 id="events">&#9654; Eventos y reuniones</h2>
+                
+                <div class="gallery-container">
+                   <div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-alva-majo-eva-madrid-vr.jpg' alt='Guinxu Alva Majo EVA Madrid VR' style='' title='Guinxu y Alva Majo enfrentándose a un duelo VR en EVA Madrid.'>Guinxu y Alva Majo enfrentándose a un duelo VR en EVA Madrid.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-uji-castellon-masterclass-universidad.jpg' alt='Guinxu UJI Universidad Jaume I Castellón Masterclass' style='' title='Guinxu dando una masterclass sobre iluminación en videojuegos en la Universitat Jaume I (UJI, Castellón).'>Guinxu dando una masterclass sobre iluminación en videojuegos en la Universitat Jaume I (UJI, Castellón).</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-tenerife-lan-party-paracetamor-silithur.jpg' alt='Guinxu Tenerife Lan Party Paracetamor Silithur' style='' title='Guinxu, Paracetamor y Silithur en el escenario de Intel de la Tenerife Lan Party (TLP) 2024.'>Guinxu, Paracetamor y Silithur en el escenario de Intel de la Tenerife Lan Party (TLP) 2024.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-jump2digital-barcelona.jpg' alt='Guinxu Jump2Digital 2023 Barcelona' style='' title='Guinxu explicando gráficos 3D en Jump2Digital 2023 (Barcelona).'>Guinxu explicando gráficos 3D en Jump2Digital 2023 (Barcelona).</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-nate-gentile-mouredev-miriam-gonzalez-rocio-tome-bettatech.jpg' alt='Guinxu Jump2digital Nate Gentile MoureDev Míriam González Rocío Tomé BettaTech' style='' title='Guinxu en Jump2Digital con Nate Gentile, MoureDev, Míriam González, Rocío Tomé y BettaTech.'>Guinxu en Jump2Digital con Nate Gentile, MoureDev, Míriam González, Rocío Tomé y BettaTech.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-ericrod-leyendas-y-videojuegos-indie.jpg' alt='Guinxu EricRod Leyendas y Videojuegos' style='object-position: 0% 0%' title='Guinxu visitando el stand de Farlands de EricRod (Leyendas y Videojuegos).'>Guinxu visitando el stand de Farlands de EricRod (Leyendas y Videojuegos).</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-mandy-b-blue-tokyo.jpg' alt='guinxu mandy b blue tokyo' style='' title='Guinxu con Mandy B. Blue, cantante del opening de Flatworld.'>Guinxu con Mandy B. Blue, cantante del opening de Flatworld.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-crespo-quantum-fracture.jpg' alt='guinxu crespo quantum fracture' style='' title='Guinxu con Crespo de Quantum Fracture.'>Guinxu con Crespo de Quantum Fracture.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-nate-gentile-cheeto-dario-rubius.jpg' alt='guinxu nate gentile sr cheeto' style='object-position: 60% 0%' title='Sr. Cheeto y Darío Eme Hache entrevistando a Guinxu y Nate Gentile.'>Sr. Cheeto y Darío Eme Hache entrevistando a Guinxu y Nate Gentile.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-ray-bacon-sergi-sega-sonic.jpg' alt='Guinxu Ray Bacon Sergindsegasonic Nintendo Game Boy' style='' title='Guinxu, Ray Bacon y Sergindsegasonic jugando con sus Game Boy Color.'>Guinxu, Ray Bacon y Sergindsegasonic jugando con sus Game Boy Color.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-ray-bacon-sergi-sega-sonic-switch.jpg' alt='Guinxu Ray Bacon Sergindsegasonic Nintendo Switch' style='' title='Guinxu, Ray Bacon y Sergindsegasonic jugando con una Nintendo Switch.'>Guinxu, Ray Bacon y Sergindsegasonic jugando con una Nintendo Switch.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/mafia-devs-indie-dev-day.jpg' alt='guinxu mafia devs indie dev day barcelona' style='' title='Los Mafia Devs en el Indie Dev Day 2022 (Barcelona).'>Los Mafia Devs en el Indie Dev Day 2022 (Barcelona).</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/mafia-devs-originales-indie-dev-day.jpg' alt='guinxu mafia devs indie dev day barcelona' style='' title='Mafia Devs Origins en el Indie Dev Day 2022 (Barcelona).'>Mafia Devs Origins en el Indie Dev Day 2022 (Barcelona).</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-alva-indie-dev-day.jpg' alt='guinxu alva majo indie dev day barcelona' style='' title='Guinxu con Alva Majo.'>Guinxu con Alva Majo.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-ruki.jpg' alt='guinxu ruki' style='' title='Guinxu en Mallorca con Ruki.'>Guinxu en Mallorca con Ruki.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-alva-majo-kony-kevin.jpg' alt='guinxu alva majo kony kevin' style='' title='Guinxu en la Premiere de Rubius X con Alva Majo, Kony y Kevin.'>Guinxu en la Premiere de Rubius X con Alva Majo, Kony y Kevin.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-rubius.jpg' alt='guinxu rubius' style='object-position: 0% 40%' title='Guinxu con Rubius en el estreno de su documental.'>Guinxu con Rubius en el estreno de su documental.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-nate-gentile-alva-majo.jpg' alt='guinxu nate gentile alva majo' style='' title='Guinxu con Nate Gentile y Alva Majo.'>Guinxu con Nate Gentile y Alva Majo.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-xokas.jpg' alt='guinxu xokas' style='object-position: 0% 15%' title='Guinxu con Xokas en la fiesta del estreno de Rubius X.'>Guinxu con Xokas en la fiesta del estreno de Rubius X.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-mangel-rogel.jpg' alt='guinxu mangel rogel' style='' title='Guinxu con Mangel en el estreno de Rubius X.'>Guinxu con Mangel en el estreno de Rubius X.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-kony.jpg' alt='guinxu kony' style='object-position: 0% 20%' title='Guinxu con su (supuesta) hermana Kony.'>Guinxu con su (supuesta) hermana Kony.</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-charditronic-chardi.jpg' alt='guinxu charditronic chardi' style='' title='Guinxu con Chardi en el Indie Dev Day de Barcelona (2021).'>Guinxu con Chardi en el Indie Dev Day de Barcelona (2021).</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-indie-dev-day-2021.jpg' alt='Guinxu Indie Dev Day 2021 Barcelona' style='' title='Guinxu dando una conferencia en el Indie Dev Day 2021 (Barcelona).'>Guinxu dando una conferencia en el Indie Dev Day 2021 (Barcelona).</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-loulogio-jape.jpg' alt='guinxu loulogio jape' style='' title='Guinxu con Loulogio y Jape en el Salón del Comic de Valencia (2020).'>Guinxu con Loulogio y Jape en el Salón del Comic de Valencia (2020).</div><div class='gallery-image'><img loading='lazy' src='fotos/gente/guinxu-stand-flatworld-nice-one-barcelona.jpg' alt='guinxu stand flatworld nice one barcelona' style='' title='Guinxu en la Nice One Barcelona en el Stand de Flatworld.'>Guinxu en la Nice One Barcelona en el Stand de Flatworld.</div>                </div>
+                
+                <!--
+                <h2 id="hobbies">&#9654; Mis aficiones</h2>
+                
+                <div class="gallery-container">
+                    <div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-coleccion-snes-super-nintendo-famicom.jpg' alt='guinxu coleccion snes super nintendo famicom' style='' title='Colección de juegos de Super Nintendo / Super Famicom.'>Colección de juegos de Super Nintendo / Super Famicom.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-coleccion-n64-nintendo-64.jpg' alt='guinxu coleccion n64 nintendo 64' style='' title='Colección de juegos de Nintendo 64.'>Colección de juegos de Nintendo 64.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-coleccion-psx-ps1-playstation-1.jpg' alt='guinxu coleccion psx ps1 playstation 1' style='' title='Colección de juegos de Playstation 1.'>Colección de juegos de Playstation 1.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-setup-game-boy-advance.jpg' alt='"guinxu setup game boy advance' style='' title='Vitrina de figuras y colección de juegos de Game Boy Color / Advance.'>Vitrina de figuras y colección de juegos de Game Boy Color / Advance.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-setup.jpg' alt='guinxu setup' style='' title='Setup de fondo de los vídeos del canal de YouTube de Guinxu.'>Setup de fondo de los vídeos del canal de YouTube de Guinxu.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-setup-2.jpg' alt='guinxu setup 2' style='' title='Consolas retro: Super Nintendo, PS1, Game Cube y Nintendo 64.'>Consolas retro: Super Nintendo, PS1, Game Cube y Nintendo 64.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-setup-switch-super-nintendo-snes.jpg' alt='guinxu setup switch super nintendo snes' style='' title='Estantería con mi colección de Nintendo Switch, PSP y Super Nintendo.'>Estantería con mi colección de Nintendo Switch, PSP y Super Nintendo.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-setup-nintendo-64-ds-3ds-game-cube-playstation-wii-u.jpg' alt='guinxu setup nintendo 64 ds 3ds game cube playstation wii u' style='' title='Mi colección de Nintendo 64, DS, 3DS, Playstation 1 a 4, Wii U y Game Cube.'>Mi colección de Nintendo 64, DS, 3DS, Playstation 1 a 4, Wii U y Game Cube.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-coleccion-consolas-nintendo.jpg' alt='guinxu coleccion consolas nintendo' style='' title='Todas mis consolas de Nintendo.'>Todas mis consolas de Nintendo.</div><div class='gallery-image'><img loading='lazy' src='fotos/aficiones/guinxu-setup-3.jpg' alt='guinxu setup 3' style='' title='Antiguo setup de los vídeos del canal de YouTube de Guinxu.'>Antiguo setup de los vídeos del canal de YouTube de Guinxu.</div>                </div>-->
+
+                
+                <div class="gallery-popup">
+                    <span>&times;</span>
+                    <img src="presskit/logo-guinxu-color.png" alt="">
+                </div>
+                
+                <script type="text/javascript" src="utils/galeria.js"></script>
+
+            </div>
+        </div>
+        
+        <div class="menu-footer">
+    <p align=center>
+        <a href="https://twitter.com/guinxu" target=_blank class="white-expand-hover"><img src="img/twitter.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://instagram.com/guinxu" target=_blank class="white-expand-hover"><img src="img/instagram.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://youtube.com/c/guinxu" target=_blank class="white-expand-hover"><img src="img/youtube.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://twitch.tv/guinxu" target=_blank class="white-expand-hover"><img src="img/twitch.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://tiktok.com/@guinxudev" target=_blank class="white-expand-hover"><img src="img/tiktok.png" style="margin-left: 16px; margin-right: 16px;"></a>
+    </p>
+    
+    <p align=center>
+        <a href="about">About</a> | <a href="contact">Contact</a> | <a href="faq">FAQ</a>
+    </p>
+    
+    <p align=center>2025 Guinxu. All rights reserved.</p>
+</div>            </body>
+</html>
