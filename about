@@ -1,0 +1,243 @@
+
+<html lang='es'>    <head>
+        <meta charset="UTF-8">
+        <meta name='description' content='Página oficial de Guillem Salvadó, desarrollador independiente de videojuegos y autor del canal de YouTube Guinxu.'>        <meta name="keywords" content="Guinxu, Ginxu, GameDev, Game Dev, Indie, Flatworld, One Cat a Day, Desarrollo de videojuegos, Guillem Salvadó, DevTube, Dev Tuber, YouTube, Influencer">
+        <meta name="author" content="Guinxu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre mí - Guinxu</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+        <link rel="stylesheet" href="utils/style.css">
+    </head>
+    <body>
+        
+        <nav class="menu-container">
+
+    <ul class="menu-row">
+        
+        <li class="menu-cell menu-active"><a href="."><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Info <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="games">Proyectos</a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Influencer <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="gallery">Galería</a></li>
+        
+        <li class="menu-dropdown" style="float:right; width:120px;">
+            <a href="javascript:void(0)" class="menu-dropdown-button"><img src='img/flag_es.png'> Español</a>
+            <div class="menu-dropdown-content-lang">
+                <a href="javascript:void(0)" onclick="SetLang('es');"><img src="img/flag_es.png"> Español</a>
+                <a href="javascript:void(0)" onclick="SetLang('en');"><img src="img/flag_en.png"> English</a>
+            </div>
+        </li>
+        
+    </ul>
+    
+    
+    <ul class="menu-row-mobile">
+        
+        <li class="menu-dropdown-mobile">
+            <a href="javascript:void(0)" class="menu-dropdown-button" onclick="UnfoldMobileMenu(); return false;">&#9776; Menú</a>
+            <div class="menu-dropdown-content-mobile">
+                <a href="." class="pallete-yellow"><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a>
+                
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+                
+                <a href="games">Proyectos</a>
+                
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+                
+                <a href="gallery">Galería</a>
+                
+                <a href='javascript:void(0)' onclick=SetLang('en');>                <img src='img/flag_en.png'> English                </a>            </div>
+        </li>
+    </ul>
+
+</nav>
+
+
+<script>
+
+function UnfoldMobileMenu()
+{
+    if (document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display == 'block')
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'none';
+    }
+    else
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'block';
+    }
+}
+
+function SetLang(newLang)
+{
+    var urlOriginal = window.location.pathname;
+    var sufijo = urlOriginal.replace("en/", "");
+    
+    if (newLang == "es") { window.location.href = "https://guinxu.com" + sufijo; }
+    if (newLang == "en") { window.location.href = "https://guinxu.com/en" + sufijo; }
+}
+    
+</script>
+
+
+        
+        <div class="content">
+            <div class="content-body">
+                <p align=center><img src="img/gray-yellow-logo.png"></p>
+                
+                <p><a href='https://guinxu.com'>Guinxu.com</a> es la página oficial de Guillem Salvadó, desarrollador independiente de videojuegos y dueño del canal de YouTube <a href='https://youtube.com/c/guinxu' target=_blank>Guinxu</a>  (1.000.000 suscriptores).</p>
+                
+                <h1 align=center>Actividad</h1>
+                
+                <div class="only-desktop">
+                    <div class="special-row">
+                        <div class="special-column" style="display: table; height: 320px; overflow: hidden;">
+                            <div style="display:table-cell; vertical-align:middle;"><h3>Desarrollo de videojuegos para PC y Android (ver <a href='games'>Proyectos</a>).</h3></div>
+                        </div>
+                        <div class="special-column"><img src="img/activity-gamedev.jpg"></div>
+                    </div>
+                    
+                    <div class="special-row">
+                        <div class="special-column"><img src="img/activity-youtube.jpg"></div>
+                        <div class="special-column" style="display: table; height: 320px; overflow: hidden;">
+                            <div style="display:table-cell; vertical-align:middle;"><h3>Publicación de contenido divulgativo sobre desarrollo de videojuegos en <a href='https://youtube.com/c/guinxu' target=_blank>YouTube</a> (1.000.000 suscriptores).</h3></div>
+                        </div>
+                    </div>
+
+                    <div class="special-row">
+                        <div class="special-column" style="display: table; height: 320px; overflow: hidden;">
+                            <div style="display:table-cell; vertical-align:middle;"><h3>Acciones publicitarias con marcas en el canal de YouTube <a href='https://youtube.com/c/guinxu' target=_blank>Guinxu</a> y sus respectivas redes sociales.</h3></div>
+                        </div>
+                        <div class="special-column"><img src="img/activity-promo.jpg"></div>
+                    </div>
+                </div>
+                
+                <div class="only-mobile">
+                    <div style="text-align:center;"><img src="img/activity-gamedev.png"></div>
+                    <h3 align=center>Desarrollo de videojuegos para PC y Android (ver <a href='games'>Proyectos</a>).</h3>
+                    <br>
+                    <div style="text-align:center;"><img src="img/activity-youtube.png"></div>
+                    <h3 align=center>Publicación de contenido divulgativo sobre desarrollo de videojuegos en <a href='https://youtube.com/c/guinxu' target=_blank>YouTube</a> (1.000.000 suscriptores).</h3>
+                    <br>
+                    <div style="text-align:center;"><img src="img/activity-promo.png"></div>
+                    <h3 align=center>Acciones publicitarias con marcas en el canal de YouTube <a href='https://youtube.com/c/guinxu' target=_blank>Guinxu</a> y sus respectivas redes sociales.</h3>
+                </div>
+                    
+                <br>
+                
+                <h1 align=center>Bio</h1>
+                
+                <p align=center><img src="img/guinxu-foto.jpg" style="border-radius: 50%;"></p>
+                
+                <h3 align=left>Información básica</h3>
+                <ul>
+                    <li><b>Nombre</b>: </b>Guillem Salvadó</li>
+                    <li><b>Fecha de nacimiento: </b>11 de Noviembre de 1994</li>
+                    <li><b>Ubicación: </b>Barcelona (España)</li>
+                </ul>
+                
+                <h3 align=left>Formación académica</h3>
+                <ul>
+                    <li><b>Educación obligatoria y bachillerato: </b>École Française Ferdinand de Lesseps & Lycée Français de Barcelone (Barcelona 1997 – 2012).</li>
+                    <li><b>Grado en Ingeniería Informática: </b>Universidad Politécnica de Cataluña (Barcelona 2014 – 2019).</li>
+                </ul>
+                
+                <h3>Formación complementaria</h3>
+                <ul>
+                    <li>Introducción al desarrollo de <b>apps para Android</b> con Android Studio (40 horas, por JEDI UPC).</li>
+                    <li>Introducción al desarrollo de <b>apps para iOS</b> con Swift y Xcode (40 horas, por PUE Barcelona).</li>
+                    <li>Grado 4 de <b>Teoría Musical</b> (ABRSM - The Associated Board of the Royal Schools of Music).</li>
+                </ul>
+                
+                <h3 align=left>Trabajos</h3>
+                <ul>
+                    <li><b>2018 - 2019: </b> Indra Sistemas SA – Automatización robótica de procesos (RPA).</li>
+                    <li><b>2019 – actualidad: </b> Guinxu (negocio propio).                    <ul>
+                        <li>Desarrollo de videojuegos publicados en Steam y Google Play.</li>
+                        <li>Desarrollo de Software a medida para empresas.</li>
+                        <li>Canal de YouTube de divulgación sobre desarrollo de videojuegos.</li>
+                        <li>Campañas de publicidad en YouTube y RRSS (SEGA, Opera, Logitech...).</li>
+                        <li>Creación de contenido audiovisual para el canal de televisión UBeat (Mediapro Audiovisual SL) durante el 2020.</li>
+                    </ul>
+                    </li>
+                </ul>
+                
+                <h3 align=left>Conferencias y masterclasses</h3>
+                <ul>
+                    <li><b>Madrid Games Week (2018): </b>Manipulando videojuegos en directo para entender cómo funcionan por dentro.</li>
+                    <li><b>Distrito Digital Experience Alicante (2018): </b>Cómo usar YouTube para dar a conocer tu empresa de desarrollo de videojuegos.</li>
+                    <li><b>Heroes Comic Con de Valencia (2019): </b>Iniciación al desarrollo de videojuegos.</li>
+                    <li><b>Indie Dev Day Barcelona (2019): </b>Cómo usar YouTube para dar a conocer tu empresa de desarrollo de videojuegos.</li>
+                    <li><b>Salón del Cómic Valencia (2020): </b>Mesa redonda sobre nuestra trayectoria en YouTube junto con Loulogio y Javier Pérez.</li>
+                    <li><b>Indie Dev Day Barcelona (2021): </b>Consejos para colaborar con YouTubers si eres desarrollador de videojuegos.</li>
+                    <li><b>Iboix Escola (2022): </b>Masterclass de introducción al desarrollo de videojuegos.</li>
+                    <li><b>Madrid Otaku (2022): </b>Mi experiencia usando YouTube para vender mis proyectos de videojuegos.</li>
+                    <li><b>Jump2Digital Barcelona (2023): </b>¿Qué técnicas usan los videojuegos para imitar la realidad?</li>
+                    <li><b>Tenerife Lan Party (2024): </b>Técnicas de optimización y overclocking para sacar el máximo partido a tu CPU Intel®.</li>
+                    <li><b>Universitat Jaume I, Castellón (2024): </b>¿Qué técnicas usan los videojuegos para imitar la realidad? (luz, reflejos y sombras)</li>
+                </ul>
+                
+                <h3 align=left>Idiomas</h3>
+                <ul>
+                    <li>Español (Materno)</li>
+                    <li>Catalán (Materno)</li>
+                    <li>Francés (~Nativo)</li>
+                    <li>Inglés (C1 - Cambridge English Advanced)</li>
+                    <li>Japonés (Noken N5)</li>
+                </ul>
+                
+                <h3 align=left>Software y lenguajes</h3>
+                <ul>
+                    <li>Unity Engine</li>
+                    <li>Game Maker Studio</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Premiere</li>
+                    <li>OBS Studio</li>
+                    <li>Blender</li>
+                    <li>Lenguajes con los que he trabajado en mayor o menor medida: C, C++, C#, Java, Python, PHP, JavaScript, VBS, GML, HTML, CSS & SQL.</li>
+                </ul>
+                
+                
+            </div>
+        </div>
+        
+        <div class="menu-footer">
+    <p align=center>
+        <a href="https://twitter.com/guinxu" target=_blank class="white-expand-hover"><img src="img/twitter.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://instagram.com/guinxu" target=_blank class="white-expand-hover"><img src="img/instagram.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://youtube.com/c/guinxu" target=_blank class="white-expand-hover"><img src="img/youtube.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://twitch.tv/guinxu" target=_blank class="white-expand-hover"><img src="img/twitch.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://tiktok.com/@guinxudev" target=_blank class="white-expand-hover"><img src="img/tiktok.png" style="margin-left: 16px; margin-right: 16px;"></a>
+    </p>
+    
+    <p align=center>
+        <a href="about">About</a> | <a href="contact">Contact</a> | <a href="faq">FAQ</a>
+    </p>
+    
+    <p align=center>2025 Guinxu. All rights reserved.</p>
+</div>        
+    </body>
+</html>
