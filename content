@@ -1,0 +1,140 @@
+
+<html lang='es'>    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Guinxu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contenido - Guinxu</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+        <link rel="stylesheet" href="utils/style.css">
+    </head>
+    <body>
+        
+        <nav class="menu-container">
+
+    <ul class="menu-row">
+        
+        <li class="menu-cell menu-active"><a href="."><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Info <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="games">Proyectos</a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Influencer <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="gallery">Galería</a></li>
+        
+        <li class="menu-dropdown" style="float:right; width:120px;">
+            <a href="javascript:void(0)" class="menu-dropdown-button"><img src='img/flag_es.png'> Español</a>
+            <div class="menu-dropdown-content-lang">
+                <a href="javascript:void(0)" onclick="SetLang('es');"><img src="img/flag_es.png"> Español</a>
+                <a href="javascript:void(0)" onclick="SetLang('en');"><img src="img/flag_en.png"> English</a>
+            </div>
+        </li>
+        
+    </ul>
+    
+    
+    <ul class="menu-row-mobile">
+        
+        <li class="menu-dropdown-mobile">
+            <a href="javascript:void(0)" class="menu-dropdown-button" onclick="UnfoldMobileMenu(); return false;">&#9776; Menú</a>
+            <div class="menu-dropdown-content-mobile">
+                <a href="." class="pallete-yellow"><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a>
+                
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+                
+                <a href="games">Proyectos</a>
+                
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+                
+                <a href="gallery">Galería</a>
+                
+                <a href='javascript:void(0)' onclick=SetLang('en');>                <img src='img/flag_en.png'> English                </a>            </div>
+        </li>
+    </ul>
+
+</nav>
+
+
+<script>
+
+function UnfoldMobileMenu()
+{
+    if (document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display == 'block')
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'none';
+    }
+    else
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'block';
+    }
+}
+
+function SetLang(newLang)
+{
+    var urlOriginal = window.location.pathname;
+    var sufijo = urlOriginal.replace("en/", "");
+    
+    if (newLang == "es") { window.location.href = "https://guinxu.com" + sufijo; }
+    if (newLang == "en") { window.location.href = "https://guinxu.com/en" + sufijo; }
+}
+    
+</script>
+
+
+                
+        <div class="content">
+            <div class="content-body">
+                <h1>Canal de YouTube</h1>
+                
+                <div class='youtube-analytics'><div class='image-superposition-parent'><img src='https://yt3.ggpht.com/Vhp_FN9Se4Se5N8qKXXXkKjLDD0SN8DdcD4Px6KacepYJX6LjIFaZT8CfNeVGHW2H_VKZ8oYFw=s240-c-k-c0x00ffffff-no-rj' class='image-superposition-child-1'><img src='img/youtube-color.png' class='image-superposition-child-2'></div><h2 align=center style='force-center'><a href='https://youtube.com/c/guinxu' target=_blank>Guinxu</a></h2><div class='columns-wrapper'><div class='columns-element'><p class='followers-count'>1.010.000</p><h2 align=center style='force-center'>Suscriptores</h2></div><div class='columns-element'><p class='followers-count'>253.660.153</p><h2 align=center style='force-center'>Visitas</h2></div></div></div>                
+                <br>
+                
+                <h2>Contenido destacado</h2>
+                
+                <h3>&#9654; ¿Cómo funcionan los juegos por dentro?</h3>
+                <div class='youtube-playlist'><div class='youtube-playlist-video'><a href='https://youtu.be/RAPELnYZnXg' target=_blank><img src='https://i.ytimg.com/vi/RAPELnYZnXg/mqdefault.jpg'><br/>El secreto de las físicas de cuerdas en videojuegos</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/yp7HpTkSzBA' target=_blank><img src='https://i.ytimg.com/vi/yp7HpTkSzBA/mqdefault.jpg'><br/>El secreto de la LUZ en juegos estilo ANIME</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/SSoedKq6wt0' target=_blank><img src='https://i.ytimg.com/vi/SSoedKq6wt0/mqdefault.jpg'><br/>¿Cómo se SIMULAN los pelos en videojuegos?</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/NNEAjJ475cU' target=_blank><img src='https://i.ytimg.com/vi/NNEAjJ475cU/mqdefault.jpg'><br/>¿Por qué se pixelan las sombras de los juegos?</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/P7SKyx2iTj8' target=_blank><img src='https://i.ytimg.com/vi/P7SKyx2iTj8/mqdefault.jpg'><br/>¿Por qué los espejos de Fortnite reflejan MAL?</a></div></div>                
+                <h3>&#9654; Recreando juegos conocidos</h3>
+                <div class='youtube-playlist'><div class='youtube-playlist-video'><a href='https://youtu.be/wC1HcPKFg6I' target=_blank><img src='https://i.ytimg.com/vi/wC1HcPKFg6I/mqdefault.jpg'><br/>Hice un juego que se CONTROLA desde el CHAT</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/gOnw6uYs5ag' target=_blank><img src='https://i.ytimg.com/vi/gOnw6uYs5ag/mqdefault.jpg'><br/>¿Cómo SIMULAN lluvia y suelo mojado los juegos?</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/NGeZCAi2bJs' target=_blank><img src='https://i.ytimg.com/vi/NGeZCAi2bJs/mqdefault.jpg'><br/>Creando mi propia versión de Portal en Unity</a></div></div>                
+                <h3>&#9654; Diarios de desarrollo</h3>
+                <div class='youtube-playlist'><div class='youtube-playlist-video'><a href='https://youtu.be/OZpM4TBoMqw' target=_blank><img src='https://i.ytimg.com/vi/OZpM4TBoMqw/mqdefault.jpg'><br/>Perdí 5 horas con este BUG por no leer el manual de Unity</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/wc7SITFiin8' target=_blank><img src='https://i.ytimg.com/vi/wc7SITFiin8/mqdefault.jpg'><br/>Hice el PEOR sistema de cinemáticas para juegos</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/NF8UIcpk6zY' target=_blank><img src='https://i.ytimg.com/vi/NF8UIcpk6zY/mqdefault.jpg'><br/>Hice un remolino que se lo TRAGA TODO 🌊</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/gPheha7aXUU' target=_blank><img src='https://i.ytimg.com/vi/gPheha7aXUU/mqdefault.jpg'><br/>Retraso mi juego para meterle puertas japonesas</a></div><div class='youtube-playlist-video'><a href='https://youtu.be/ipXdhXQksy4' target=_blank><img src='https://i.ytimg.com/vi/ipXdhXQksy4/mqdefault.jpg'><br/>Nunca debí programar mapas redondos en mi juego</a></div></div>                
+            </div>
+        </div>
+        
+        <div class="menu-footer">
+    <p align=center>
+        <a href="https://twitter.com/guinxu" target=_blank class="white-expand-hover"><img src="img/twitter.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://instagram.com/guinxu" target=_blank class="white-expand-hover"><img src="img/instagram.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://youtube.com/c/guinxu" target=_blank class="white-expand-hover"><img src="img/youtube.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://twitch.tv/guinxu" target=_blank class="white-expand-hover"><img src="img/twitch.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://tiktok.com/@guinxudev" target=_blank class="white-expand-hover"><img src="img/tiktok.png" style="margin-left: 16px; margin-right: 16px;"></a>
+    </p>
+    
+    <p align=center>
+        <a href="about">About</a> | <a href="contact">Contact</a> | <a href="faq">FAQ</a>
+    </p>
+    
+    <p align=center>2025 Guinxu. All rights reserved.</p>
+</div>        
+    </body>
+</html>
