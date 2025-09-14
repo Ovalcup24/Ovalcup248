@@ -1,0 +1,162 @@
+
+<html lang='es'>    <head>
+        <meta charset="UTF-8">
+        <meta name='description' content='Recorre el supermercado comprando todos los productos de la lista antes de que tu familia añada más.'>        <meta name="keywords" content="Guinxu, Ginxu, GameDev, Game Dev, Indie, Flatworld, One Cat a Day, Desarrollo de videojuegos, Guillem Salvadó, DevTube, Dev Tuber, YouTube, Influencer">
+        <meta name="author" content="Guinxu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>No More Shopping - Guinxu</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+        <link rel="stylesheet" href="utils/style.css">
+    </head>
+    <body>
+        
+        <nav class="menu-container">
+
+    <ul class="menu-row">
+        
+        <li class="menu-cell menu-active"><a href="."><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Info <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="games">Proyectos</a></li>
+        
+        <li class="menu-dropdown">
+            <a href="javascript:void(0)" class="menu-dropdown-button">Influencer <img src="img/triangleMenu.png"></a>
+            <div class="menu-dropdown-content">
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+            </div>
+        </li>
+        
+        <li class="menu-cell"><a href="gallery">Galería</a></li>
+        
+        <li class="menu-dropdown" style="float:right; width:120px;">
+            <a href="javascript:void(0)" class="menu-dropdown-button"><img src='img/flag_es.png'> Español</a>
+            <div class="menu-dropdown-content-lang">
+                <a href="javascript:void(0)" onclick="SetLang('es');"><img src="img/flag_es.png"> Español</a>
+                <a href="javascript:void(0)" onclick="SetLang('en');"><img src="img/flag_en.png"> English</a>
+            </div>
+        </li>
+        
+    </ul>
+    
+    
+    <ul class="menu-row-mobile">
+        
+        <li class="menu-dropdown-mobile">
+            <a href="javascript:void(0)" class="menu-dropdown-button" onclick="UnfoldMobileMenu(); return false;">&#9776; Menú</a>
+            <div class="menu-dropdown-content-mobile">
+                <a href="." class="pallete-yellow"><img src="img/menu-logo.png" style="border: 0px; margin: 0px; padding: 0px;"></a>
+                
+                <a href="about">Sobre mí</a>
+                <a href="setup">Mi Setup</a>
+                <a href="presskit">Kit de prensa</a>
+                
+                <a href="games">Proyectos</a>
+                
+                <a href="content">Contenido</a>
+                <a href="promo">Marcas</a>
+                <a href="events">Eventos</a>
+                
+                <a href="gallery">Galería</a>
+                
+                <a href='javascript:void(0)' onclick=SetLang('en');>                <img src='img/flag_en.png'> English                </a>            </div>
+        </li>
+    </ul>
+
+</nav>
+
+
+<script>
+
+function UnfoldMobileMenu()
+{
+    if (document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display == 'block')
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'none';
+    }
+    else
+    {
+        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'block';
+    }
+}
+
+function SetLang(newLang)
+{
+    var urlOriginal = window.location.pathname;
+    var sufijo = urlOriginal.replace("en/", "");
+    
+    if (newLang == "es") { window.location.href = "https://guinxu.com" + sufijo; }
+    if (newLang == "en") { window.location.href = "https://guinxu.com/en" + sufijo; }
+}
+    
+</script>
+
+
+        
+        <div class="content">
+            <div class="content-body">
+
+                <p align=center><img src="img/no-more-shopping-title.png"></p>
+                
+                <p>Recorre el supermercado <b>comprando todos los productos de la lista</b>. ¡Pero ten cuidado! Tu familia es muy olvidadiza así que no pararán de llamarte para <b>pedirte más productos</b> que no pensaron en un principio. ¿Acaso hay algo más estresante?</p>
+                <p>¡Procura <b>comprar todos los artículos</b> que te han pedido y no dejes que la lista de la compra se vuelva <b>demasiado larga</b> o explotarás de la ira!</p>
+                
+                <ul>
+                    <li><b>Estado:</b> Completo (Game Jam), valorando extenderlo y comercializarlo.</li>
+                    <li><b>Lanzamiento:</b> 2021 (versión de Game Jam).</li>
+                    <li><b>Género:</b> Acción Arcade</li>
+                    <li><b>Idiomas:</b> Español</li>
+                    <li><b>Jugadores:</b> 1</li>
+                    <li><b>Plataforma:</b> Windows</li>
+                </ul>
+                
+                <p align=center><a href="https://guisado-enchufado.itch.io/no-more-shopping" target=_blank class="white-expand-hover shadow-effect"><img src="img/available-on-itch-io.png"></a></p>
+                
+                <br><br><br>
+                
+                 <div class="gallery-container">
+                    <div class="gallery-image"><img loading="lazy" src="games-img/no-more-shopping-1.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/no-more-shopping-2.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/no-more-shopping-3.png"></div>
+                    <div class="gallery-image"><img loading="lazy" src="games-img/no-more-shopping-4.png"></div>
+                </div>
+
+                <div class="gallery-popup">
+                    <span>&times;</span>
+                    <img src="presskit/logo-guinxu-color.png" alt="">
+                </div>
+                
+                <script type="text/javascript" src="utils/galeria.js"></script>
+                
+            </div>
+        </div>
+        
+        <div class="menu-footer">
+    <p align=center>
+        <a href="https://twitter.com/guinxu" target=_blank class="white-expand-hover"><img src="img/twitter.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://instagram.com/guinxu" target=_blank class="white-expand-hover"><img src="img/instagram.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://youtube.com/c/guinxu" target=_blank class="white-expand-hover"><img src="img/youtube.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://twitch.tv/guinxu" target=_blank class="white-expand-hover"><img src="img/twitch.png" style="margin-left: 16px; margin-right: 16px;"></a>
+        <a href="https://tiktok.com/@guinxudev" target=_blank class="white-expand-hover"><img src="img/tiktok.png" style="margin-left: 16px; margin-right: 16px;"></a>
+    </p>
+    
+    <p align=center>
+        <a href="about">About</a> | <a href="contact">Contact</a> | <a href="faq">FAQ</a>
+    </p>
+    
+    <p align=center>2025 Guinxu. All rights reserved.</p>
+</div>        
+    </body>
+</html>
+
